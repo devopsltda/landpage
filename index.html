@@ -4,6 +4,11 @@
     <title>DevOPS</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Meta tags Open Graph para compartilhamento no WhatsApp -->
+    <meta property="og:title" content="DevOPS">
+    <meta property="og:description" content="Transforme seu negócio com sistemas que fazem sentido para você.">
+    <meta property="og:image" content="https://i.imgur.com/CB7ZApC.png">
+    <meta property="og:url" content="https://devops.tec.br">
     <link rel="shortcut icon" href="./assets/logo-violeta.png" type="image/x-icon">
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -26,7 +31,7 @@
   </head>
   <body class="overflow-x-hidden">
     <header
-      class="bg-[#131313] flex items-center justify-between px-20 py-5 text-white  fixed "
+      class="bg-[#131313] flex items-center justify-between px-20 py-5 text-white z-50 fixed "
     >
       <a class="smooth-scroll w-2/12" href="#home"
         ><img src="./assets/logotipo-completo-roxo.png" alt="DevOps"
@@ -42,6 +47,8 @@
       </nav>
     </header>
     <div class="bg-[#f7f8ff] flex  flex-col min-h-screen  text-[#131313]">
+
+
       <section
         id="home"
         class="flex flex-col gap-16 items-center justify-center  px-28 pb-28 pt-[10.5rem]"
@@ -84,41 +91,54 @@
           >
         </div>
       </section>
+
       <section
         id="produtos"
-        class="bg-[#e9ebf4] flex flex-col gap-2 items-center justify-center pt-24 pb-28  w-full"
+        class="bg-[#e9ebf4] flex flex-col gap-4 items-center justify-center pt-24 pb-28  w-full"
       >
         <h2 class="font-extrabold text-[90px]">Conheça as nossas soluções</h2>
-        <span class="text-[#acacac] text-3xl text-center leading-normal"
+        <span class="text-[#acacac] text-3xl text-center leading-normal mb-16"
           >Desenvolvemos ferramentas inteligentes que facilitam a <br> gestão e
           impulsionam o crescimento do seu negócio</span
         >
-        <div class="gap-10 grid grid-cols-2  ">
-          <div class=""
-          >
+        <div class="gap-10 flex flex-col w-full grid-cols-2 items-center ">
             <div
-              class=" bg-[url('https://elephant.ie/wp-content/uploads/2023/06/Stock-Storage-1024x683.jpg')] bg-cover bg-[center_top_0rem]  flex flex-col h-[33rem] items-center w-[50rem]  rounded text-white"
+              class=" hover:scale-95 transition  duration-500 bg-[url('https://elephant.ie/wp-content/uploads/2023/06/Stock-Storage-1024x683.jpg')] bg-cover bg-[center_top_0rem] flex flex-col h-[50rem] items-center w-[45rem]  rounded text-white"
             >
-            <div class="bg-[rgba(0,0,0,0.6)] border-[10px] border-[#596ae7] rounded ">
-              <div class="">
-                <div class=" flex flex-col  justify-center bg-gradient-to-b from-transparent to-[#000000] items-center h-[33rem] w-[49rem] ">
+            <div class="bg-[rgba(0,0,0,0.6)] border-[10px] border-[#596ae7] rounded   ">
+                <div class=" flex flex-col  justify-end  bg-gradient-to-b from-transparent to-[#000000]  items-center h-[50rem] w-[44rem] ">
                   <h3 class="text-[75px] font-bold">Stockee</h3>
-                  <span class="text-center text-2xl text-[#d3d2d2]"
+                  <span class="text-center text-2xl text-[#d3d2d2] mb-4 leading-relaxed"
                     >Um estoque simplificado em uma <br> plataforma fácil de usar.</span
                   >
+                  <div class="flex flex-col w-[60%] gap-1 mt-10">
+                    <div class="flex items-center gap-1 mb-1">
+                      <img src="./assets/icon-check-white.png" alt=""  width="23" height="23">
+                      <p class="font-normal text-lg text-[#d3d2d2]">Acompanhamento em tempo real</p>
+                    </div>
+                    <hr class="border-1 border-[#d3d2d2] h-1 w-full mb-1" />
+                    <div class="flex items-center gap-1 mb-1">
+                      <img src="./assets/icon-check-white.png" alt=""  width="23" height="23">
+                      <p class="font-normal text-lg text-[#d3d2d2]">Previsão de demanda</p>
+                    </div>
+                    <hr class="border-1 border-[#d3d2d2] h-1 w-full mb-1" />
+                    <div class="flex items-center gap-1 mb-1">
+                      <img src="./assets/icon-check-white.png" alt=""  width="23" height="23">
+                      <p class="font-normal text-lg text-[#d3d2d2]">Redução de disperdícios</p>
+                    </div>
+                    <hr class="border-1 border-[#d3d2d2] h-1 w-full mb-1" />
+                  </div>
                   <a
                     href="#"
-                    class="bg-white font-bold p-3 rounded text-center text-3xl text-[#596ae7] w-[50%] mt-5"
+                    class="bg-white font-bold p-3 rounded text-center text-3xl text-[#596ae7] w-[60%] mt-5 mb-24"
                     >Conheça o Stockee</a
                   >
     
                 </div>
-              </div>
             </div>
           </div>
-          </div>
           <div
-            class="bg-[#596ae7] gap-2 col-span-2 flex flex-col items-center py-10 px-32 justify-center w-full rounded-lg text-center text-white"
+            class="bg-[#596ae7] gap-2 col-span-2 flex flex-col items-center py-10 px-56 justify-center  rounded-lg text-center text-white"
           >
             <h3 class="text-5xl font-bold pb-3">
               Entre em contato para uma solução personalizada

@@ -31,20 +31,24 @@
   </head>
   <body class="overflow-x-hidden w-screen">
     <header
+      id="main-nav"
       class=" w-full bg-[#131313] flex md:flex-row flex-col items-center justify-between md:px-20 max- md:py-5 text-white z-50 fixed "
     >
       <a class="  max-md:hidden  smooth-scroll w-2/12" href="#home"
         ><img src="./assets/logotipo-completo-roxo.png" alt="DevOps"
       /></a>
       <input type="checkbox" name="toggle-mobile" class="hidden  peer" id="toggle-mobile">
-      <label for="toggle-mobile" class=" flex flex-col md:hidden  w-full items-center py-7  ">
-        <img src="./assets/logotipo-completo-roxo.png" class="w-2/4" alt="">
+      <label for="toggle-mobile" class=" flex md:hidden  w-full justify-center-center py-7  ">
+        <i class='bx bx-list-ul max-[320px]:pr-10 max-[375px]:pr-[3.2rem] max-[390px]:pr-[3.5rem] pr-[4.50rem] pl-2 text-3xl '></i>
+        <div class="flex items-center  w-full  ">
+          <img src="./assets/logotipo-completo-roxo.png" class=" w-52 " alt="">
+        </div>
       </label>
-      <nav class=" max-sm:w-full hidden md:flex peer-checked:flex max-sm:text-xl flex-col md:flex-row  font-bold  md:gap-5 items-center ">
-        <a class="smooth-scroll max-sm:w-full max-sm:p-3 max-sm:text-center" href="#produtos">Nossos Produtos</a>
-        <a class="smooth-scroll max-sm:w-full max-sm:p-3 max-sm:text-center" href="#porque">Por que a DevOPS?</a>
-        <a class="smooth-scroll max-sm:w-full max-sm:p-3 max-sm:text-center" href="#depoimentos">Depoimentos</a>
-        <a class="smooth-scroll max-sm:w-full max-sm:p-3 max-sm:text-center" href="#sobre">Sobre Nós</a>
+      <nav class=" max-sm:w-full hidden md:flex peer-checked:flex max-sm:text-xl flex-col md:flex-row   font-bold  md:gap-5 items-center ">
+        <a class="smooth-scroll max-sm:w-full max-sm:p-3 max-sm:text-center " href="#home">Sobre Nós</a>
+        <a class="smooth-scroll max-sm:w-full max-sm:p-3 max-sm:text-center " href="#produtos">Nossos Produtos</a>
+        <a class="smooth-scroll max-sm:w-full max-sm:p-3 max-sm:text-center " href="#porque">Por que a DevOPS?</a>
+        <a class="smooth-scroll max-sm:w-full max-sm:p-3 max-sm:text-center " href="#depoimentos">Depoimentos</a>
         <a href="#contato" class="smooth-scroll bg-[#596ae7] md:ml-5 max-sm:my-5  p-3 md:p-3 rounded "
           >FALE CONOSCO</a
         >
@@ -56,7 +60,7 @@
         id="home"
         class=" flex flex-col gap-12 md:gap-16 items-center  md:px-28 pb-28 "
       >
-        <h1 class=" max-[320px]:pt-28 max-[375px]:pt-32 md:pt-[10.5rem] pt-36 max-[375px]:text-4xl text-[40px] md:text-[90px] font-extrabold  text-center leading-tight w-full md:w-2/3">
+        <h1 class=" max-[320px]:pt-30 max-[375px]:pt-32 md:pt-[10.5rem] pt-36 max-[375px]:text-4xl text-[40px] md:text-[90px] font-extrabold  text-center leading-tight w-full md:w-2/3">
           Transforme seu negócio <br />
           com sistemas que fazem sentido para você.
         </h1>
@@ -90,45 +94,46 @@
           >
         </div>
       </section>
-      <!-- <section
+      <section
         id="produtos"
-        class="bg-[#e9ebf4] flex flex-col gap-4 items-center justify-center pt-24 pb-28  w-full"
+        class="bg-[#e9ebf4] flex flex-col gap-4 md:gap-12 items-center justify-center pt-24 pb-28 md:pt-36 w-full"
       >
-        <h2 class="font-extrabold text-[90px]">Conheça as nossas soluções</h2>
-        <span class="text-[#acacac] text-3xl text-center leading-normal mb-16"
+        <h2 class="font-extrabold text-2xl md:text-[90px]">Conheça as nossas soluções</h2>
+
+        <span class="text-[#acacac] text-lg md:text-3xl text-center leading-normal  max-sm:mb-8 md:mt-0"
           >Desenvolvemos ferramentas inteligentes que facilitam a <br> gestão e
           impulsionam o crescimento do seu negócio</span
         >
         <div class="gap-10 flex flex-col w-full grid-cols-2 items-center ">
             <div
-              class=" hover:scale-95 transition  duration-500 bg-[url('https://elephant.ie/wp-content/uploads/2023/06/Stock-Storage-1024x683.jpg')] bg-cover bg-[center_top_0rem] flex flex-col h-[50rem] items-center w-[45rem]  rounded text-white"
+              class="  hover:scale-95 transition  duration-500 bg-[url('https://elephant.ie/wp-content/uploads/2023/06/Stock-Storage-1024x683.jpg')] bg-cover bg-[center_top_0rem] flex flex-col md:h-[35rem] items-center md:w-[35rem]  rounded text-white"
             >
-            <div class="bg-[rgba(0,0,0,0.6)] border-[10px] border-[#596ae7] rounded   ">
-                <div class=" flex flex-col  justify-end  bg-gradient-to-b from-transparent to-[#000000]  items-center h-[50rem] w-[44rem] ">
-                  <h3 class="text-[75px] font-bold">Stockee</h3>
-                  <span class="text-center text-2xl text-[#d3d2d2] mb-4 leading-relaxed"
+            <div class="bg-[rgba(0,0,0,0.6)] border-[10px] border-[#596ae7] rounded  ">
+                <div class=" flex flex-col max-[425px]:gap-5 justify-end max-[320px]:w-72 h-[35rem] w-80 bg-gradient-to-b from-transparent to-[#000000] items-center md:h-[34rem] md:w-[34rem]">
+                  <h3 class="md:text-[62px] text-5xl font-bold">Stockee</h3>
+                  <span class="text-center text-sm md:text-xl text-[#d3d2d2] mb-6 md:mb-4  mt-0 md:mt-4 leading-relaxed"
                     >Um estoque simplificado em uma <br> plataforma fácil de usar.</span
                   >
-                  <div class="flex flex-col w-[60%] gap-1 mt-10">
+                  <div class="flex flex-col md:w-[60%] gap-1 md:mt-5">
                     <div class="flex items-center gap-1 mb-1">
                       <img src="./assets/icon-check-white.png" alt=""  width="23" height="23">
-                      <p class="font-normal text-lg text-[#d3d2d2]">Acompanhamento em tempo real</p>
+                      <p class="font-normal text-sm md:text-lg   text-[#d3d2d2]">Acompanhamento em tempo real</p>
                     </div>
                     <hr class="border-1 border-[#d3d2d2] h-1 w-full mb-1" />
                     <div class="flex items-center gap-1 mb-1">
                       <img src="./assets/icon-check-white.png" alt=""  width="23" height="23">
-                      <p class="font-normal text-lg text-[#d3d2d2]">Previsão de demanda</p>
+                      <p class="font-normal text-sm md:text-lg text-[#d3d2d2]">Previsão de demanda</p>
                     </div>
                     <hr class="border-1 border-[#d3d2d2] h-1 w-full mb-1" />
                     <div class="flex items-center gap-1 mb-1">
                       <img src="./assets/icon-check-white.png" alt=""  width="23" height="23">
-                      <p class="font-normal text-lg text-[#d3d2d2]">Redução de desperdícios</p>
+                      <p class="font-normal text-sm md:text-lg text-[#d3d2d2]">Redução de desperdícios</p>
                     </div>
                     <hr class="border-1 border-[#d3d2d2] h-1 w-full mb-1" />
                   </div>
                   <a
                     href="#"
-                    class="bg-white font-bold p-3 rounded text-center text-3xl text-[#596ae7] w-[60%] mt-5 mb-24"
+                    class="bg-white font-bold md:p-3 py-3 rounded text-center text-base md:text-3xl text-[#596ae7] w-[60%] mt-5 md:mb-16 mb-10"
                     >Conheça o Stockee</a
                   >
     
@@ -136,18 +141,18 @@
             </div>
           </div>
           <div
-            class="bg-[#596ae7] gap-2 col-span-2 flex flex-col items-center py-10 px-56 justify-center  rounded-lg text-center text-white"
+            class="bg-[#596ae7] gap-2 col-span-2 flex flex-col items-center py-10 md:px-56 justify-center  rounded-lg text-center text-white"
           >
-            <h3 class="text-5xl font-bold pb-3">
+            <h3 class="md:text-5xl text-2xl font-bold pb-3">
               Entre em contato para uma solução personalizada
             </h3>
-            <span class="pb-5 text-3xl text-[#f1f1f1da]"
+            <span class="pb-5 md:text-xl text-xl text-[#f1f1f1da]"
               >Nós propomos soluções eficientes para o seu contexto específico
               de negócio.</span
             >
             <a
               href="#contato"
-              class="bg-white font-extrabold py-5 px-10 rounded text-center  text-[#131313] w-fit text-3xl"
+              class="bg-white font-extrabold md:py-5 md:px-10 px-3 py-5 rounded text-center text-2xl text-[#131313] md:w-fit md:text-3xl"
               >Entre em contato conosco</a
             >
           </div>
@@ -156,114 +161,143 @@
 
       <section
         id="porque"
-        class="bg-[url('./assets/bg-porque.png')] bg-auto bg-[center_top_0rem]   bg-no-repeat h-screen pb-10"
+        class="bg-[url('./assets/bg-porque.png')] md:bg-auto bg-[center_top_0rem]  bg-cover   bg-no-repeat h-screen pb-10"
       >
         <div
-          class="bg-[rgba(0,0,0,0.87)] flex gap-96 items-center min-h-screen p-28 text-white"
+          class="bg-[rgba(0,0,0,0.87)] flex md:flex-row flex-col w-full md:gap-96 items-center min-h-screen max-h-screen  pt-32 max-[375px]:pt-16 px-16 md:p-28 text-white"
         >
           <div class="flex flex-col gap-5">
-            <h1 class="leading-snug text-7xl font-extrabold">
+            <h1 class="leading-snug md:text-7xl text-4xl font-extrabold">
               Por que escolher <br />
               a DevOPS?
             </h1>
-            <span class="text-[#acacac] text-[30px] mb-10"
+            <span class="text-[#acacac] md:text-[30px] text-sm mb-10"
               >Aqui o empreendedorismo, tecnologia e <br />
               colaboração andam de mãos dadas.</span
             >
             <a
               href="#contato"
-              class="bg-[hsl(233,75%,63%)] font-bold  w-96 rounded text-center text-white p-5"
+              class="bg-[hsl(233,75%,63%)] font-bold  w-96 rounded text-center text-white p-5 hidden md:block"
               >ENTRE EM CONTATO CONOSCO</a
             >
           </div>
 
-          <div class="flex flex-col gap-16 ml-[15%]">
-            <div class="flex flex-col text-center items-center">
+          <div class="flex flex-col md:gap-16 gap-5 md:ml-[15%]">
+
+            <!-- Quadro selos mobile 2 primeiros selos -->
+              <div class="hidden max-sm:flex gap-5">
+                <div class="flex flex-col text-center items-center">
+                  <img
+                    class="mb-5 md:w-16 md:h-16 w-10 h-10"
+                    src="./assets/icon-hand.png"
+                    alt=""
+                  />
+                  <h3 class="md:text-[20px] text-sm">Comprometimento Total</h3>
+                  <span class="text-[#acacac] max-sm:text-sm"
+                    >Nós nos importamos com o sucesso <br />
+                    do seu negócio tanto quanto você.</span
+                  >
+                </div>
+                <div class="flex flex-col  text-center items-center">
+                  <img
+                    class="mb-5 md:w-[4.5rem] md:h-[4.5rem] w-10 h-10"
+                    src="./assets/icon-garantia.png"
+                    alt=""
+                  />
+                  <h3 class="md:text-[20px] text-sm ">Qualidade <br> Garantida</h3>
+                  <span class="text-[#acacac] max-sm:text-sm"
+                    >Desenvolvemos softwares robustos,<br />
+                    seguros e de fácil utilização.</span
+                  >
+                </div>
+              </div>
+            <!-- fim do quadro -->
+            <div class="flex flex-col max-sm:hidden text-center items-center">
               <img
-                class="mb-5"
+                class="mb-5 md:w-16 md:h-16 w-10 h-10"
                 src="./assets/icon-hand.png"
-                width="60"
-                height="60"
                 alt=""
               />
-              <h3 class="text-[20px]">Comprometimento Total</h3>
-              <span class="text-[#acacac]"
+              <h3 class="md:text-[20px] text-sm">Comprometimento Total</h3>
+              <span class="text-[#acacac] max-sm:text-sm"
                 >Nós nos importamos com o sucesso <br />
                 do seu negócio tanto quanto você.</span
               >
             </div>
-            <div class="flex flex-col text-center items-center">
+            <div class="flex flex-col  max-sm:hidden text-center items-center">
               <img
-                class="mb-5"
+                class="mb-5 md:w-[4.5rem] md:h-[4.5rem] w-10 h-10"
                 src="./assets/icon-garantia.png"
-                width="70"
-                height="70"
                 alt=""
               />
-              <h3 class="text-[20px]">Qualidade Garantida</h3>
-              <span class="text-[#acacac]"
+              <h3 class="md:text-[20px] text-sm ">Qualidade Garantida</h3>
+              <span class="text-[#acacac] max-sm:text-sm"
                 >Desenvolvemos softwares robustos,<br />
                 seguros e de fácil utilização.</span
               >
             </div>
-            <div class="flex flex-col text-center items-center">
+            <div class="flex flex-col  max-sm:mt-5 text-center items-center">
               <img
-                class="mb-5"
+                class="mb-5 md:w-16 md:h-16 w-9 h-9"
                 src="./assets/icon-grafico.png"
-                width="59"
-                height="59"
                 alt=""
               />
-              <h3 class="text-[20px]">Escalamos com você</h3>
-              <span class="text-[#acacac]"
+              <h3 class="md:text-[20px] text-sm">Escalamos com você</h3>
+              <span class="text-[#acacac] max-sm:text-sm"
                 >Nossas soluções crescem com o seu negócio,<br />
                 dando a você o que precisa, quando precisa.</span
               >
+              
             </div>
           </div>
+          <a
+          href="#contato"
+          class="bg-[hsl(233,75%,63%)] font-bold  p-3 rounded text-center whitespace-nowrap text-white mt-5 block md:hidden "
+          >ENTRE EM CONTATO CONOSCO</a
+        >
         </div>
       </section>
 
       <section
         id="depoimentos"
-        class="bg-[#131313]  flex gap-5 h-screen text-white"
+        class="bg-[#131313]  flex flex-col md:flex-row max-sm:items-center gap-5 h-screen text-white"
       >
-        <div class=" bg-[url('./assets/bg-depoimento.png')] bg-cover bg-[center_top_0rem] flex  w-1/2">
-          <h1 class="bg-[rgba(89,106,231,0.79)] flex  h-full w-full font-bold text-6xl items-center justify-start pl-24  leading-snug ">
+        <div class=" bg-[url('./assets/bg-depoimento.png')] bg-cover bg-[center_top_0rem] flex  md:flex-row w-full max-sm:h-1/2 md:w-1/2 ">
+          <h1 class="bg-[rgba(89,106,231,0.79)] text-4xl flex flex-col md:flex-row h-full  w-full font-bold md:text-6xl items-center md:justify-start md:pl-24 justify-center leading-snug ">
             O que nossos <br> clientes  andam<br> dizendo sobre nós
           </h1>
         </div>
-        <div class=" flex flex-col gap-5 px-28 pb-28 pt-[7rem] w-1/2">
-          <div class="flex flex-col gap-5">
-            <q
+        <div class=" flex flex-col gap-5  md:px-28 md:pb-28 md:pt-[7rem] md:w-1/2 max-sm:px-5">
+          <div class="flex flex-col gap-5 max-sm:text-[12px] max-sm:w-full ">
+            <q 
               >Essa DevOps é uma altarquia, uma penteadeira cheia de cacareco,
               um caminhão carregado de gaiola. A melhor empresa de software do
               Brasil. Do Brasil não, das Américas. Das Américas não, do mundo.
               Dessa empresa não tem o que tesourar. É ou não é, doquinha?</q
             >
-            <div class="flex gap-5 h-16">
+            <div class="flex gap-5 h-10 md:h-16">
               <img
-                class="rounded-full h-full"
+                class="rounded-full h-full "
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAmwlbYHH9tK0-byINsPsZNK6Yc425-wI8iQ&usqp=CAU"
                 alt="Coxinha"
               />
               <div class="flex flex-col justify-center">
-                <b class="font-extrabold text-lg">Coxinha</b>
+                <b class="font-extrabold md:text-lg">Coxinha</b>
                 <span class="font-thin text-[#acacac]">Fofoqueiro</span>
               </div>
             </div>
           </div>
           <hr class="border-1 border-[#596ae7] h-1 w-full" />
-          <div class="flex flex-col gap-5">
+          <div class="flex flex-col gap-5 max-sm:text-[12px]">
             <q>É sim, coxinha, é sim.</q>
-            <div class="flex gap-5 h-16">
+            <div class="flex gap-5 h-10 md:h-16">
               <img
                 class="rounded-full h-full"
                 src="https://pbs.twimg.com/profile_images/1683530691/coxinha-e-doquinha_400x400.jpg"
                 alt="Doquinha"
               />
               <div class="flex flex-col justify-center">
-                <b class="font-extrabold text-lg">Doquinha</b>
+                <b class="font-extrabold md:text-lg">Doquinha</b>
                 <span class="font-thin text-[#acacac]"
                   >Auxiliar de Fofoqueiro</span
                 >
@@ -275,16 +309,16 @@
       </section>
 
       <footer
-        class="bg-[#e9ebf4] flex flex-col gap-5 px-28 py-10 text-[#acacac] text-center"
+        class="bg-[#e9ebf4] flex flex-col gap-5 md:px-28 py-10 text-[#acacac] text-center"
       >
-        <div class="flex items-center justify-between py-20">
+        <div class="flex md:flex-row flex-col items-center justify-between md:py-20">
           <div class="flex flex-col gap-5 text-[#596ae7]">
             <img
-              class="h-20"
+              class="md:h-20  max-sm:w-72 "
               src="./assets/logotipo-completo-roxo.png"
               alt="DevOps"
             />
-            <div class="flex gap-1">
+            <div class="flex gap-2">
               <i class="bx bxl-github text-3xl"></i>
               <i class="bx bxl-instagram text-3xl"></i>
               <i class="bx bxl-linkedin text-3xl"></i>
@@ -292,18 +326,18 @@
               <i class="bx bx-envelope text-3xl"></i>
             </div>
           </div>
-          <div class="flex gap-10">
-            <div class="flex flex-col gap-3 items-start">
+          <div class="flex max-[320px]:gap-5 md:gap-20">
+            <div class="flex flex-col gap-2 items-start max-[320px]:text-sm ">
               <h4
-                class="border-l-4 border-[#596ae7] font-bold px-3 text-xl text-[#131313]"
+                class="border-l-4 border-[#596ae7] font-bold px-3 max-[320px]:text-sm text-xl text-[#131313]"
               >
                 Produtos
               </h4>
               <span>Stockee</span>
             </div>
-            <div class="flex flex-col gap-3 items-start ">
+            <div class="flex flex-col gap-3 items-start max-[320px]:text-sm ">
               <h4
-                class="border-l-4 border-[#596ae7] font-bold px-3 text-xl text-[#131313]"
+                class="border-l-4 border-[#596ae7] font-bold px-3 text-xl max-[320px]:text-sm text-[#131313]"
               >
                 Empresa
               </h4>
@@ -312,9 +346,9 @@
               <span>Trabalhe conosco</span>
               <span>Missões</span>
             </div>
-            <div class="flex flex-col gap-3 items-start">
+            <div class="flex flex-col gap-3 items-start max-[320px]:text-sm ">
               <h4
-                class="border-l-4 border-[#596ae7] font-bold px-3 text-xl text-[#131313]"
+                class="border-l-4 border-[#596ae7] font-bold px-3 max-[320px]:text-sm  text-xl text-[#131313]"
               >
                 Blog
               </h4>
@@ -325,10 +359,10 @@
             </div>
           </div>
         </div>
-        <small
+        <small class="max-sm:mt-20"
           >Copyright &#169; DEVOPS 2023 - Todos os direitos reservados</small
         >
-      </footer> -->
+      </footer>
     </div>
     <script src="./script.js"></script>
   </body>

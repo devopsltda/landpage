@@ -19,12 +19,13 @@
       }
     }
   </script>
+  <script src="https://unpkg.com/@botpoison/browser" async></script>
 </head>
 
 <body>
   <header class="snap-always snap-start bg-black h-16 w-full">
-    <div class="container relative flex mx-auto justify-between px-20">
-      <div class="flex items-center justify-between font-bold p-5 text-white w-full">
+    <div class="container relative flex mx-auto justify-between px-10 md:px-20 h-full">
+      <div class="flex items-center justify-between font-bold md:p-5 text-white h-full w-full">
         <div class="flex items-center">
           <a href="#" class="inline-block">
             <svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 1952 252" fill="currentColor"
@@ -33,7 +34,7 @@
                 d="M1191.5 1c-11.7 2.4-24 9.3-32.1 18.2l-5 5.6-15 .6c-42.6 1.9-69.8 6.8-92.1 16.4-33 14.3-50.2 37.9-53.2 73.1-1.7 19.6 1.7 41.8 8.5 55.4 5.7 11.4 17.8 25.3 26.4 30.4 1.6.9 3 2 3 2.3 0 .3-6.7 10.4-15 22.5-8.2 12-15 22.4-15 23 0 3.5 2.1 3.6 58.7 3.3 54.6-.3 55.9-.4 62.4-2.5 8.7-3 18.1-9.1 24.9-16.3l5.5-5.8 22-1.1c42-2.1 69.5-7.9 91.5-19.2 23.6-12.1 38-29.7 44.2-54.5 1.9-7.7 2.3-11.4 2.2-26.9 0-16.2-.3-19-2.7-27.7-3.6-13.5-9.6-24.7-18.1-33.6-6.6-7-15.4-14.2-17.2-14.2-.5 0-4.5 5.3-8.9 11.7-23.8 34.9-22.4 31.9-18.4 37.1 4 5.2 6.3 15.1 6.3 26.7 0 26.7-10.6 39.5-38.4 46.3-13.7 3.4-23.7 4.3-55.5 5.1-27.6.7-30.4.9-35.7 3-8.4 3.2-14.3 9.2-25.8 26.1-12.1 17.5-10.2 16.7-28.2 12.1-15.1-3.9-35.4-12.1-37.2-15-.3-.5 5.5-9.8 13-20.8 7.5-10.9 14.1-20.7 14.6-21.8.7-1.6.1-3.4-2.7-8-4.8-8-5.6-11.2-6.2-23.4-1.1-22.2 6.1-35.8 23-43.6 15.5-7.2 31.2-9.4 71.7-10.4 27.9-.7 31-.9 36-2.9 8.4-3.3 13.7-8.7 25.4-25.6 12.3-17.9 10.4-17 26.1-13.2 12.5 3.1 22.8 6.7 32.9 11.8 4.3 2.2 7.9 3.8 8.1 3.6 4.7-5.7 29.5-43.8 29.5-45.4 0-1.2-.7-2.5-1.6-2.8-2.3-.9-107.3-.5-111.9.4zm592 21.6c-45.8 3.5-69.6 10.3-84.7 24.2-10.3 9.6-14.8 20.8-14.8 36.8.1 28.1 13.3 44.3 43.2 52.8 14.2 4.1 28 5.4 93.3 9.1 34.1 1.9 63.6 3.9 65.5 4.5 8 2.3 11 5.7 11 12.5 0 8.5-5.1 12.3-19.5 14.6-10.2 1.6-59.3 1.6-81 0-27-2-68.4-7.9-92.1-13.1-4.9-1-8.9-1.8-9-1.7-.9.8-7.4 41.1-6.9 42.6.3 1 1.4 2.6 2.4 3.5 3.4 3.1 42.3 9.4 81.6 13.3 13.3 1.3 27.6 1.7 55 1.8 37 0 48.7-.7 67.5-4.1 39.5-7.1 57-23.9 57-54.9 0-35.7-21.7-55.6-66.4-61-6.7-.8-36.2-2.8-65.6-4.5-69.7-3.9-74.9-4.6-79-9.7-3-3.8-2.8-11.6.4-14.8 5.2-5.2 10.1-5.8 48.6-6.3 46-.5 81.6 1.7 120 7.5 9.6 1.4 18.8 2.6 20.4 2.7l2.9.1 3.9-18.3c2.2-10.2 3.7-19.4 3.4-20.8-.4-1.3-1.6-3-2.9-3.8-4-2.7-39.2-7.9-74.2-11.1-15.9-1.5-68.9-2.7-80-1.9zM0 120.5v97.6l108.3-.4c106.1-.3 108.4-.4 119.5-2.5 44-8.5 66.3-30.3 72.8-71.3 2.5-15.6 1.5-43.9-1.9-56.9-4.5-17.1-10.8-28.2-21.6-38.3-15-13.8-36.3-21.8-66-24.7-6.2-.6-50.5-1-110.7-1H0v97.5zm212.8-45.2c22.1 5.9 30.3 20 28.9 49.7-.7 16.2-3.2 23.6-10.7 31.1-4.4 4.4-6.9 6-12 7.7-12.3 4.1-17.4 4.3-99.5 4l-79-.3-.2-2.5c-.2-1.9.7-3.2 4-5.5 2.3-1.7 5.7-5.2 7.4-7.9 5.9-8.6 6.3-11.7 6.3-44.8 0-28.7.1-29.9 2-31.8 2.1-2.1 2.6-2.1 74.3-1.7 63.8.3 72.9.5 78.5 2zm134.9-51.6c-.4.3-.7 44.2-.7 97.5V218h261v-45H498.2c-84.1 0-110.1-.3-111-1.2-2.2-2.2-1.3-3.8 4.2-7.3 3-1.9 6.8-5.1 8.5-7.2 3.1-3.7 6.1-11.6 6.1-15.9 0-1.2.7-2.5 1.6-2.8.9-.3 27.3-.6 58.7-.6 63.8 0 61.3.2 68.6-7.1 5.5-5.4 7.1-10.1 7.1-20.7V101h-76.9c-66.3 0-77-.2-78.1-1.5-1.8-2.2-1.1-3 6.5-8.2 7.5-5.2 11.2-10.7 12.2-18.2l.6-4.1H608V23H478.2c-71.4 0-130.2.3-130.5.7zm301.5.2c.2.5 28.4 44.4 62.8 97.5l62.5 96.5 39 .1h39.1l62.2-96.1c34.3-52.8 62.6-96.7 62.9-97.5.4-1.2-4.7-1.4-35.1-1.4H907l-5.3 8.2c-2.9 4.6-23.5 37.7-45.7 73.6L815.5 170l-18-.2c-14.6-.2-18-.6-18-1.7 0-.8.9-1.9 2-2.5 7.3-3.9 9.8-6.1 11.6-9.9 2.2-5.1 2.4-9.6.4-14.3-.8-1.9-17.3-29.3-36.6-60.9L721.6 23h-36.4c-21.8 0-36.2.4-36 .9zm713.5-.2c-.4.3-.7 44.2-.7 97.5V218h59v-23.8c0-17.2.3-24.1 1.2-25 .9-.9 18.9-1.2 74.7-1.2 61 0 75.2-.3 82.9-1.5 26.2-4.3 43.6-15.5 52.7-34 6.1-12.2 7.8-20.7 7.8-39 0-13.2-.4-17.4-2.1-23.6-7.5-27.5-26.9-41.9-61.7-45.9-10-1.1-212.7-1.5-213.8-.3zm205.8 51.6c8.7 3.9 11.9 9.5 11.8 20.9-.1 13.7-6.4 20.1-22 21.9-4.3.5-40.5.8-81.7.7-66.2-.3-74-.5-74.9-1.9-.8-1.3.5-3.1 6.5-9 8.8-8.7 11.7-14.9 12.5-27.2l.6-7.8 71.6.3c66.5.3 71.9.4 75.6 2.1z" />
             </svg>
           </a>
-          <nav class="inline-block ml-7">
+          <nav class="hidden md:inline-block ml-7">
             <ul class="space-x-7">
               <li class="inline-block hover:text-devops">
                 <a href="#produtos">Produtos</a>
@@ -58,32 +59,32 @@
     <section class="bg-cover bg-center bg-scroll h-[calc(100vh-4rem)]"
       style="background-image: url(./assets/business-people-shaking-hands-together.jpg)">
       <div class="flex justify-center h-full w-full bg-devops-transparent">
-        <div class="container flex flex-col items-left justify-center gap-6 mx-auto">
-          <div class="text-white p-10 space-y-6">
-            <h2 class="text-4xl font-extrabold">Transforme seu negócio com sistemas que fazem sentido
+        <div class="container flex flex-col items-left justify-center gap-6 mx-auto md:px-20">
+          <div class="text-white p-10 md:p-0 space-y-6">
+            <h2 class="text-center md:text-left text-4xl font-extrabold">Transforme seu negócio com sistemas que fazem sentido
               para você.</h2>
-            <div class="flex flex-col gap-1 items-start w-full">
+            <div class="flex flex-col gap-6 md:gap-1 items-start w-full">
               <div class="flex gap-3 items-center text-lg">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                  stroke="currentColor" class="inline-block w-6 h-6">
+                  stroke="currentColor" class="inline-block min-h-6 min-w-6 w-6 h-6">
                   <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
                 </svg>
-                <p class="inline-block">Desenvolvemos soluções em sistemas eficientes, adaptáveis e precisas para
+                <p class="inline-block">Desenvolvemos soluções em <strong>sistemas eficientes</strong>, <strong>adaptáveis</strong> e <strong>precisas</strong> para
                   diversos
                   tipos de negócio.</p>
               </div>
               <div class="flex gap-3 items-center text-lg">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                  stroke="currentColor" class="inline-block w-6 h-6">
+                  stroke="currentColor" class="inline-block min-h-6 min-w-6 w-6 h-6">
                   <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
                 </svg>
-                <p class="inline-block">Se você é um empreendedor destemido e com sede de crescimento, a DevOps pode ser
+                <p class="inline-block">Se você é um <strong>empreendedor destemido</strong> e com <strong>sede de crescimento</strong>, a DevOps pode ser
                   sua
                   parceira confiável.</p>
               </div>
               <div class="w-full">
                 <a href="#fale-conosco"
-                  class="float-end drop-shadow-lg font-bold text-black text-center rounded bg-white px-12 py-2">Entre em
+                  class="block mt-6 md:mt-0 md:float-end drop-shadow-lg font-bold text-black text-center rounded bg-white px-12 py-2">Entre em
                   Contato</a>
               </div>
             </div>
@@ -92,14 +93,14 @@
       </div>
     </section>
     <section id="produtos" class="snap-always snap-start bg-white h-screen">
-      <div class="flex justify-center text-center h-full w-full">
-        <div class="container flex flex-col items-center justify-center gap-6 mx-auto">
+      <div class="flex justify-center text-center py-10 h-full w-full">
+        <div class="container flex flex-col items-center justify-center gap-6 mx-auto md:px-20">
           <div class="text-black p-10 space-y-6">
             <h2 class="text-4xl font-extrabold">Conheça as nossas soluções</h2>
             <p class="inline-block text-lg">Desenvolvemos ferramentas inteligentes que facilitam a gestão e impulsionam
               o crescimento do seu negócio.</p>
           </div>
-          <div class="grid grid-cols-2 gap-6">
+          <div class="grid md:grid-cols-2 gap-6 px-10 md:px-0">
             <div class="flex flex-col items-left bg-black text-white gap-2 p-5 rounded-lg text-left">
               <div class="flex justify-between">
                 <h3 class="font-bold text-lg">Redirectfy</h3>
@@ -116,7 +117,7 @@
                 </a>
               </div>
               <p class="font-light">Redirecionador de links que converte impressões em vendas.</p>
-              <ul class="divide-y">
+              <ul class="hidden md:block divide-y">
                 <li class="py-2">Suporta Whatsapp e Telegram</li>
                 <li class="py-2">Definição de prioridade de redirecionamento</li>
                 <li class="pt-2">Interface intuitiva e simplificada</li>
@@ -138,63 +139,87 @@
                 </a>
               </div>
               <p class="font-light">Um estoque simplificado em uma plataforma fácil de usar.</p>
-              <ul class="divide-y">
+              <ul class="hidden md:block divide-y">
                 <li class="py-2">Acompanhamento em tempo real</li>
                 <li class="py-2">Previsão de demanda</li>
                 <li class="pt-2">Redução de desperdícios</li>
               </ul>
             </div>
           </div>
-          <div
-            class="flex items-center justify-between bg-devops drop-shadow-lg p-5 rounded-lg text-white text-lg m-10 w-fit gap-6">
-            <h2>Quer uma solução personalizada?</h2>
-            <a href="#fale-conosco" class="font-bold float-end text-black text-center rounded bg-white px-12 py-2">Entre
+          <div class="flex flex-col md:flex-row font-bold items-center justify-between drop-shadow-lg text-white m-10 w-fit gap-6">
+            <h2 class="text-black text-lg">Quer uma solução personalizada?</h2>
+            <a href="#fale-conosco" class="float-end rounded bg-devops px-12 py-2">Entre
               em
               Contato</a>
           </div>
         </div>
       </div>
     </section>
-    <section id="fale-conosco" class="snap-always snap-start bg-purple-500 h-screen"></section>
-    <section class="snap-always snap-start bg-yellow-500 h-screen"></section>
+    <section id="fale-conosco" class="snap-always snap-start bg-devops-transparent h-screen">
+      <div class="container flex items-center justify-center mx-auto h-full w-full px-10 md:px-20">
+        <div
+          class="bg-white text-black rounded-lg flex flex-col justify-center items-center text-center p-10 md:p-24 drop-shadow-lg w-full">
+          <div class="text-black md:p-10 space-y-6 mb-6">
+            <h2 class="text-4xl font-extrabold">Entre em contato conosco</h2>
+            <p class="inline-block text-lg">Oferecemos comprometimento total e garantia de qualidade enquanto escalamos
+              com você.</p>
+          </div>
+          <form class="grid grid-cols-2 grid-rows-6 md:grid-rows-5 gap-6 text-black h-fit w-full"
+            action="https://submit-form.com/9xorW7VWh" method="post"
+            data-botpoison-public-key="pk_33ddc27a-b54b-4153-a4f2-52100535d51a">
+            <div class="col-span-2 md:col-span-1">
+              <input class="block bg-transparent border-2 border-black rounded p-2 w-full placeholder:text-gray-600"
+                name="name" id="name" type="text" placeholder="Nome" required="">
+            </div>
+            <div class="col-span-2 md:col-span-1">
+              <input class="block bg-transparent border-2 border-black rounded p-2 w-full placeholder:text-gray-600"
+                name="email" id="email" type="email" placeholder="Email" required="">
+            </div>
+            <div class="flex flex-col col-span-2 row-span-3">
+              <textarea class="grow bg-transparent border-2 border-black rounded p-2 resize-none placeholder:text-gray-600" name="message"
+                id="message" placeholder="Mensagem" required=""></textarea>
+            </div>
+            <button class="font-bold col-span-2 block bg-black text-white rounded" type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer class="snap-always snap-start bg-black flex flex-col gap-5 md:px-28 py-10 text-white text-center">
-    <div class="flex md:flex-row flex-col gap-10 md:gap-0 justify-between py-10 md:py-20">
-      <div class="flex flex-col gap-5">
-        <a href="#" class="inline-block">
-          <svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 1952 252" fill="currentColor" class="h-7">
-            <path
-              d="M1191.5 1c-11.7 2.4-24 9.3-32.1 18.2l-5 5.6-15 .6c-42.6 1.9-69.8 6.8-92.1 16.4-33 14.3-50.2 37.9-53.2 73.1-1.7 19.6 1.7 41.8 8.5 55.4 5.7 11.4 17.8 25.3 26.4 30.4 1.6.9 3 2 3 2.3 0 .3-6.7 10.4-15 22.5-8.2 12-15 22.4-15 23 0 3.5 2.1 3.6 58.7 3.3 54.6-.3 55.9-.4 62.4-2.5 8.7-3 18.1-9.1 24.9-16.3l5.5-5.8 22-1.1c42-2.1 69.5-7.9 91.5-19.2 23.6-12.1 38-29.7 44.2-54.5 1.9-7.7 2.3-11.4 2.2-26.9 0-16.2-.3-19-2.7-27.7-3.6-13.5-9.6-24.7-18.1-33.6-6.6-7-15.4-14.2-17.2-14.2-.5 0-4.5 5.3-8.9 11.7-23.8 34.9-22.4 31.9-18.4 37.1 4 5.2 6.3 15.1 6.3 26.7 0 26.7-10.6 39.5-38.4 46.3-13.7 3.4-23.7 4.3-55.5 5.1-27.6.7-30.4.9-35.7 3-8.4 3.2-14.3 9.2-25.8 26.1-12.1 17.5-10.2 16.7-28.2 12.1-15.1-3.9-35.4-12.1-37.2-15-.3-.5 5.5-9.8 13-20.8 7.5-10.9 14.1-20.7 14.6-21.8.7-1.6.1-3.4-2.7-8-4.8-8-5.6-11.2-6.2-23.4-1.1-22.2 6.1-35.8 23-43.6 15.5-7.2 31.2-9.4 71.7-10.4 27.9-.7 31-.9 36-2.9 8.4-3.3 13.7-8.7 25.4-25.6 12.3-17.9 10.4-17 26.1-13.2 12.5 3.1 22.8 6.7 32.9 11.8 4.3 2.2 7.9 3.8 8.1 3.6 4.7-5.7 29.5-43.8 29.5-45.4 0-1.2-.7-2.5-1.6-2.8-2.3-.9-107.3-.5-111.9.4zm592 21.6c-45.8 3.5-69.6 10.3-84.7 24.2-10.3 9.6-14.8 20.8-14.8 36.8.1 28.1 13.3 44.3 43.2 52.8 14.2 4.1 28 5.4 93.3 9.1 34.1 1.9 63.6 3.9 65.5 4.5 8 2.3 11 5.7 11 12.5 0 8.5-5.1 12.3-19.5 14.6-10.2 1.6-59.3 1.6-81 0-27-2-68.4-7.9-92.1-13.1-4.9-1-8.9-1.8-9-1.7-.9.8-7.4 41.1-6.9 42.6.3 1 1.4 2.6 2.4 3.5 3.4 3.1 42.3 9.4 81.6 13.3 13.3 1.3 27.6 1.7 55 1.8 37 0 48.7-.7 67.5-4.1 39.5-7.1 57-23.9 57-54.9 0-35.7-21.7-55.6-66.4-61-6.7-.8-36.2-2.8-65.6-4.5-69.7-3.9-74.9-4.6-79-9.7-3-3.8-2.8-11.6.4-14.8 5.2-5.2 10.1-5.8 48.6-6.3 46-.5 81.6 1.7 120 7.5 9.6 1.4 18.8 2.6 20.4 2.7l2.9.1 3.9-18.3c2.2-10.2 3.7-19.4 3.4-20.8-.4-1.3-1.6-3-2.9-3.8-4-2.7-39.2-7.9-74.2-11.1-15.9-1.5-68.9-2.7-80-1.9zM0 120.5v97.6l108.3-.4c106.1-.3 108.4-.4 119.5-2.5 44-8.5 66.3-30.3 72.8-71.3 2.5-15.6 1.5-43.9-1.9-56.9-4.5-17.1-10.8-28.2-21.6-38.3-15-13.8-36.3-21.8-66-24.7-6.2-.6-50.5-1-110.7-1H0v97.5zm212.8-45.2c22.1 5.9 30.3 20 28.9 49.7-.7 16.2-3.2 23.6-10.7 31.1-4.4 4.4-6.9 6-12 7.7-12.3 4.1-17.4 4.3-99.5 4l-79-.3-.2-2.5c-.2-1.9.7-3.2 4-5.5 2.3-1.7 5.7-5.2 7.4-7.9 5.9-8.6 6.3-11.7 6.3-44.8 0-28.7.1-29.9 2-31.8 2.1-2.1 2.6-2.1 74.3-1.7 63.8.3 72.9.5 78.5 2zm134.9-51.6c-.4.3-.7 44.2-.7 97.5V218h261v-45H498.2c-84.1 0-110.1-.3-111-1.2-2.2-2.2-1.3-3.8 4.2-7.3 3-1.9 6.8-5.1 8.5-7.2 3.1-3.7 6.1-11.6 6.1-15.9 0-1.2.7-2.5 1.6-2.8.9-.3 27.3-.6 58.7-.6 63.8 0 61.3.2 68.6-7.1 5.5-5.4 7.1-10.1 7.1-20.7V101h-76.9c-66.3 0-77-.2-78.1-1.5-1.8-2.2-1.1-3 6.5-8.2 7.5-5.2 11.2-10.7 12.2-18.2l.6-4.1H608V23H478.2c-71.4 0-130.2.3-130.5.7zm301.5.2c.2.5 28.4 44.4 62.8 97.5l62.5 96.5 39 .1h39.1l62.2-96.1c34.3-52.8 62.6-96.7 62.9-97.5.4-1.2-4.7-1.4-35.1-1.4H907l-5.3 8.2c-2.9 4.6-23.5 37.7-45.7 73.6L815.5 170l-18-.2c-14.6-.2-18-.6-18-1.7 0-.8.9-1.9 2-2.5 7.3-3.9 9.8-6.1 11.6-9.9 2.2-5.1 2.4-9.6.4-14.3-.8-1.9-17.3-29.3-36.6-60.9L721.6 23h-36.4c-21.8 0-36.2.4-36 .9zm713.5-.2c-.4.3-.7 44.2-.7 97.5V218h59v-23.8c0-17.2.3-24.1 1.2-25 .9-.9 18.9-1.2 74.7-1.2 61 0 75.2-.3 82.9-1.5 26.2-4.3 43.6-15.5 52.7-34 6.1-12.2 7.8-20.7 7.8-39 0-13.2-.4-17.4-2.1-23.6-7.5-27.5-26.9-41.9-61.7-45.9-10-1.1-212.7-1.5-213.8-.3zm205.8 51.6c8.7 3.9 11.9 9.5 11.8 20.9-.1 13.7-6.4 20.1-22 21.9-4.3.5-40.5.8-81.7.7-66.2-.3-74-.5-74.9-1.9-.8-1.3.5-3.1 6.5-9 8.8-8.7 11.7-14.9 12.5-27.2l.6-7.8 71.6.3c66.5.3 71.9.4 75.6 2.1z" />
-          </svg>
-        </a>
-      </div>
-      <div class="flex max-[320px]:gap-5 gap-5 md:gap-20 max-sm:mt-5">
-        <div class="flex flex-col gap-3 items-start max-[320px]:text-sm">
-          <h4 class="border-l-4 border-[#596ae7] font-bold px-3 max-[320px]:text-sm text-xl">
+  <footer class="snap-always snap-start bg-black flex flex-col py-10 text-white text-center">
+    <div class="container flex flex-col md:flex-row mx-auto justify-between py-10 md:py-20">
+      <a href="#" class="block mx-auto md:ml-0">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 1952 252" fill="currentColor" class="h-7">
+          <path
+            d="M1191.5 1c-11.7 2.4-24 9.3-32.1 18.2l-5 5.6-15 .6c-42.6 1.9-69.8 6.8-92.1 16.4-33 14.3-50.2 37.9-53.2 73.1-1.7 19.6 1.7 41.8 8.5 55.4 5.7 11.4 17.8 25.3 26.4 30.4 1.6.9 3 2 3 2.3 0 .3-6.7 10.4-15 22.5-8.2 12-15 22.4-15 23 0 3.5 2.1 3.6 58.7 3.3 54.6-.3 55.9-.4 62.4-2.5 8.7-3 18.1-9.1 24.9-16.3l5.5-5.8 22-1.1c42-2.1 69.5-7.9 91.5-19.2 23.6-12.1 38-29.7 44.2-54.5 1.9-7.7 2.3-11.4 2.2-26.9 0-16.2-.3-19-2.7-27.7-3.6-13.5-9.6-24.7-18.1-33.6-6.6-7-15.4-14.2-17.2-14.2-.5 0-4.5 5.3-8.9 11.7-23.8 34.9-22.4 31.9-18.4 37.1 4 5.2 6.3 15.1 6.3 26.7 0 26.7-10.6 39.5-38.4 46.3-13.7 3.4-23.7 4.3-55.5 5.1-27.6.7-30.4.9-35.7 3-8.4 3.2-14.3 9.2-25.8 26.1-12.1 17.5-10.2 16.7-28.2 12.1-15.1-3.9-35.4-12.1-37.2-15-.3-.5 5.5-9.8 13-20.8 7.5-10.9 14.1-20.7 14.6-21.8.7-1.6.1-3.4-2.7-8-4.8-8-5.6-11.2-6.2-23.4-1.1-22.2 6.1-35.8 23-43.6 15.5-7.2 31.2-9.4 71.7-10.4 27.9-.7 31-.9 36-2.9 8.4-3.3 13.7-8.7 25.4-25.6 12.3-17.9 10.4-17 26.1-13.2 12.5 3.1 22.8 6.7 32.9 11.8 4.3 2.2 7.9 3.8 8.1 3.6 4.7-5.7 29.5-43.8 29.5-45.4 0-1.2-.7-2.5-1.6-2.8-2.3-.9-107.3-.5-111.9.4zm592 21.6c-45.8 3.5-69.6 10.3-84.7 24.2-10.3 9.6-14.8 20.8-14.8 36.8.1 28.1 13.3 44.3 43.2 52.8 14.2 4.1 28 5.4 93.3 9.1 34.1 1.9 63.6 3.9 65.5 4.5 8 2.3 11 5.7 11 12.5 0 8.5-5.1 12.3-19.5 14.6-10.2 1.6-59.3 1.6-81 0-27-2-68.4-7.9-92.1-13.1-4.9-1-8.9-1.8-9-1.7-.9.8-7.4 41.1-6.9 42.6.3 1 1.4 2.6 2.4 3.5 3.4 3.1 42.3 9.4 81.6 13.3 13.3 1.3 27.6 1.7 55 1.8 37 0 48.7-.7 67.5-4.1 39.5-7.1 57-23.9 57-54.9 0-35.7-21.7-55.6-66.4-61-6.7-.8-36.2-2.8-65.6-4.5-69.7-3.9-74.9-4.6-79-9.7-3-3.8-2.8-11.6.4-14.8 5.2-5.2 10.1-5.8 48.6-6.3 46-.5 81.6 1.7 120 7.5 9.6 1.4 18.8 2.6 20.4 2.7l2.9.1 3.9-18.3c2.2-10.2 3.7-19.4 3.4-20.8-.4-1.3-1.6-3-2.9-3.8-4-2.7-39.2-7.9-74.2-11.1-15.9-1.5-68.9-2.7-80-1.9zM0 120.5v97.6l108.3-.4c106.1-.3 108.4-.4 119.5-2.5 44-8.5 66.3-30.3 72.8-71.3 2.5-15.6 1.5-43.9-1.9-56.9-4.5-17.1-10.8-28.2-21.6-38.3-15-13.8-36.3-21.8-66-24.7-6.2-.6-50.5-1-110.7-1H0v97.5zm212.8-45.2c22.1 5.9 30.3 20 28.9 49.7-.7 16.2-3.2 23.6-10.7 31.1-4.4 4.4-6.9 6-12 7.7-12.3 4.1-17.4 4.3-99.5 4l-79-.3-.2-2.5c-.2-1.9.7-3.2 4-5.5 2.3-1.7 5.7-5.2 7.4-7.9 5.9-8.6 6.3-11.7 6.3-44.8 0-28.7.1-29.9 2-31.8 2.1-2.1 2.6-2.1 74.3-1.7 63.8.3 72.9.5 78.5 2zm134.9-51.6c-.4.3-.7 44.2-.7 97.5V218h261v-45H498.2c-84.1 0-110.1-.3-111-1.2-2.2-2.2-1.3-3.8 4.2-7.3 3-1.9 6.8-5.1 8.5-7.2 3.1-3.7 6.1-11.6 6.1-15.9 0-1.2.7-2.5 1.6-2.8.9-.3 27.3-.6 58.7-.6 63.8 0 61.3.2 68.6-7.1 5.5-5.4 7.1-10.1 7.1-20.7V101h-76.9c-66.3 0-77-.2-78.1-1.5-1.8-2.2-1.1-3 6.5-8.2 7.5-5.2 11.2-10.7 12.2-18.2l.6-4.1H608V23H478.2c-71.4 0-130.2.3-130.5.7zm301.5.2c.2.5 28.4 44.4 62.8 97.5l62.5 96.5 39 .1h39.1l62.2-96.1c34.3-52.8 62.6-96.7 62.9-97.5.4-1.2-4.7-1.4-35.1-1.4H907l-5.3 8.2c-2.9 4.6-23.5 37.7-45.7 73.6L815.5 170l-18-.2c-14.6-.2-18-.6-18-1.7 0-.8.9-1.9 2-2.5 7.3-3.9 9.8-6.1 11.6-9.9 2.2-5.1 2.4-9.6.4-14.3-.8-1.9-17.3-29.3-36.6-60.9L721.6 23h-36.4c-21.8 0-36.2.4-36 .9zm713.5-.2c-.4.3-.7 44.2-.7 97.5V218h59v-23.8c0-17.2.3-24.1 1.2-25 .9-.9 18.9-1.2 74.7-1.2 61 0 75.2-.3 82.9-1.5 26.2-4.3 43.6-15.5 52.7-34 6.1-12.2 7.8-20.7 7.8-39 0-13.2-.4-17.4-2.1-23.6-7.5-27.5-26.9-41.9-61.7-45.9-10-1.1-212.7-1.5-213.8-.3zm205.8 51.6c8.7 3.9 11.9 9.5 11.8 20.9-.1 13.7-6.4 20.1-22 21.9-4.3.5-40.5.8-81.7.7-66.2-.3-74-.5-74.9-1.9-.8-1.3.5-3.1 6.5-9 8.8-8.7 11.7-14.9 12.5-27.2l.6-7.8 71.6.3c66.5.3 71.9.4 75.6 2.1z" />
+        </svg>
+      </a>
+      <ul class="hidden md:grid md:grid-cols-3 md:gap-20">
+        <li class="flex flex-col gap-3 items-start max-[320px]:text-sm">
+          <h4 class="border-l-4 border-devops font-bold px-3 max-[320px]:text-sm text-xl">
             Produtos
           </h4>
           <span>Stockee</span>
-        </div>
-        <div class="flex flex-col gap-3 items-start max-[320px]:text-sm">
-          <h4 class="border-l-4 border-[#596ae7] font-bold px-3 text-xl max-[320px]:text-sm">
+        </li>
+        <li class="flex flex-col gap-3 items-start max-[320px]:text-sm">
+          <h4 class="border-l-4 border-devops font-bold px-3 text-xl max-[320px]:text-sm">
             Empresa
           </h4>
           <span>Quem somos nós</span>
           <span>Ética de conduta</span>
           <span>Trabalhe conosco</span>
           <span>Missões</span>
-        </div>
-        <div class="flex flex-col gap-3 items-start max-[320px]:text-sm ">
-          <h4 class="border-l-4 border-[#596ae7] font-bold px-3 max-[320px]:text-sm text-xl">
+        </li>
+        <li class="flex flex-col gap-3 items-start max-[320px]:text-sm ">
+          <h4 class="border-l-4 border-devops font-bold px-3 max-[320px]:text-sm text-xl">
             Blog
           </h4>
           <span>Institucional</span>
           <span>E-books</span>
           <span>Podcast</span>
           <span>Artigos</span>
-        </div>
-      </div>
+        </li>
+      </ul>
     </div>
     <small class="max-sm:mt-10">Copyright © DevOps 2024 - Todos os direitos reservados</small>
   </footer>
